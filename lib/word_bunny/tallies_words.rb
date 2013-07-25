@@ -5,15 +5,18 @@ module WordBunny
       text = cleanup text
 
       text.split.each do |word|
-        index = results.find_index {|e| e[word]}
+        index = results.find_index {
+          |word_count_pair| word_count_pair.first == word
+        }
+
         unless index
-          results << {word => 1}
+          results << [word, 1]
         else
-          results[index][word] += 1
+          results[index][1] += 1
         end
       end
 
-      results.sort {|a, b| b.values.first <=> a.values.first}
+      results.sort {|a, b| b.last <=> a.last}
     end
 
     private
