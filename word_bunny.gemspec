@@ -8,4 +8,5 @@ Gem::Specification.new do |s|
   s.email = 'marcrendlignacio@gmail.com'
   s.files = ['lib/word_bunny.rb']
   s.add_development_dependency('rspec', '~>2.14.1')
+  s.add_development_dependency('pry', '0.9.12.2')
 end
