@@ -6,7 +6,8 @@ https://rubygems.org/gems/word_bunny
 
 ### Description
 
-a rubygem that counts each unique word in any given string
+A rubygem that counts each unique word in any given string.
+Created during a PHRUG hacknight.
 
 ### Usage
 
