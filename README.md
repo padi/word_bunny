@@ -12,7 +12,7 @@ Created during a PHRUG hacknight.
 ### Usage
 
 ```ruby
-$ require 'word_bunny'
-$ WordBunny::TalliesWords.execute 'Hop! Bunny, hop!'
- => [["hop", 2], ["bunny", 1]]
+require 'word_bunny'
+WordBunny::TalliesWords.execute 'Hop! Bunny, hop!'
+# => [["hop", 2], ["bunny", 1]]
 ```
