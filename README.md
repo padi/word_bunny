@@ -4,6 +4,8 @@ Word Bunny
 Feeds on words, not carrots.
 https://rubygems.org/gems/word_bunny
 
+[![Code Climate](https://codeclimate.com/github/padi/word_bunny.png)](https://codeclimate.com/github/padi/word_bunny)
+
 ### Description
 
 A rubygem that counts each unique word in any given string.
