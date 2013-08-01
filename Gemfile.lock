@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    word_bunny (0.0.1)
+    word_bunny (0.0.2)
 
 GEM
   remote: https://rubygems.org/
