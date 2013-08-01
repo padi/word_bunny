@@ -4,7 +4,7 @@ PATH
     word_bunny (0.0.1)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     coderay (1.0.9)
     diff-lcs (1.2.4)
