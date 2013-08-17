@@ -1,22 +1,13 @@
 module WordBunny
   class TalliesWords
     def self.execute text
-      results = []
       words = extract_words_from text
-
-      words.each do |word|
-        index = results.find_index {
-          |word_count_pair| word_count_pair.first == word
-        }
-
-        unless index
-          results << [word, 1]
-        else
-          results[index][1] += 1
+      word_histogram = words.uniq.map { |word| [word, 0] }
+      words.each_with_object(word_histogram) do |word, results|
+        results.each_with_index.map do |word_count_pair, index|
+          results[index][1] += 1 if word_count_pair.first == word
         end
-      end
-
-      results.sort {|a, b| b.last <=> a.last}
+      end.sort {|a, b| b.last <=> a.last}
     end
 
     private
